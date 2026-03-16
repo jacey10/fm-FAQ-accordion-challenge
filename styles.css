@@ -176,6 +176,7 @@ body {
 }
 
 .card__title {
+  font-size: var(--space-xxlg);
   color: var(--clr-purple-950);
 }
 
