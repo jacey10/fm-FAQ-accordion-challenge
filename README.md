@@ -54,7 +54,7 @@ Users should be able to:
 
 - I learned that getAttribute always returns a string, never a boolean.
 - I learned how to convert a string to a boolean using strict comparison operator ===
-- I learned that the hidden property is a boolean toggle
+- I learned that the hidden property is a boolean toggle.
 - Attribute-driven state: I learned how to read state directly from the DOM via aria-expanded. The DOM being a single source of truth.
 - CSS reacting to aria state: I learned how to use attribute selectors, e.g. button[aria-expanded="true] as a CSS selector, to toggle the plus and minus svg icon.
 
@@ -68,7 +68,7 @@ button[aria-expanded="true"] .icon--plus {
 }
 ```
 
-- I learne dhow to handle ARIA and visibilty together even though they are independent.
+- I learne how to handle ARIA and visibilty together even though they are independent.
 - I learned how to use aria-expanded for communicating state to screen readers.
 - I learned how to use aria-controls to link a button to its answer div or panel.
 
