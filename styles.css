@@ -213,6 +213,7 @@ button img {
 .title {
   display: inline-block;
   color: var(--clr-purple-950);
+  font-size: 1.14rem;
   font-weight: 600;
   padding-right: var(--space-sm);
   min-width: 0;

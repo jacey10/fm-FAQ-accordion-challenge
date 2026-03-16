@@ -1,6 +1,4 @@
 const buttons = document.querySelectorAll('.accordion--btn');
-const plus = document.querySelector('.icon--plus');
-const minus = document.querySelector('.icon--minus');
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
