@@ -97,7 +97,7 @@ textarea:not([rows]) {
   /* == COLOR PALLETTE == */
 
   /* Colors */
-  --clr-purple-100: hsl(276, 58%, 91%);
+  --clr-purple-100: hsl(275, 100%, 97%);
   --clr-purple-300: hsl(292, 16%, 49%);
   --clr-purple-600: hsl(293, 58%, 50%);
   --clr-purple-950: hsl(292, 42%, 14%);
@@ -204,7 +204,7 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 
-button img {
+button .icon {
   width: var(--space-lg);
   height: var(--space-lg);
   flex-shrink: 0;
@@ -215,7 +215,6 @@ button img {
   color: var(--clr-purple-950);
   font-size: 1.14rem;
   font-weight: 600;
-  padding-right: var(--space-sm);
   min-width: 0;
   overflow-wrap: break-word;
 }
