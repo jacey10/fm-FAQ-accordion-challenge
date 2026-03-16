@@ -97,8 +97,9 @@ textarea:not([rows]) {
   /* == COLOR PALLETTE == */
 
   /* Colors */
-  --clr-purple-100: hsl(279, 50%, 95%);
-  --clr-purple-600: hsl(292, 16%, 49%);
+  --clr-purple-100: hsl(276, 58%, 91%);
+  --clr-purple-300: hsl(292, 16%, 49%);
+  --clr-purple-600: hsl(293, 58%, 50%);
   --clr-purple-950: hsl(292, 42%, 14%);
   --clr-white: hsl(0, 100%, 100%);
   
@@ -125,17 +126,27 @@ textarea:not([rows]) {
   --space-sr:  0.0625rem;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .title {
+    transition: none;
+  }
+}
+
+@media (hover: hover) {
+  .title:hover {
+    color: var(--clr-purple-600);
+  }
+}
+
 body {
   min-height: 100svh;
   background-color: var(--clr-purple-100);
   font-family: var(--ff-body);
   line-height: 1.5;
-  position: relative;
 }
 
 .hero {
   height: 100%;
-  position: relative;
 }
 
 .hero img {
@@ -156,12 +167,17 @@ body {
   border-radius: 0.8rem;
   padding: 1.5rem;
   background-color: var(--clr-white);
+  transform: translateY(-7rem);
 }
 
 .card__title--wrapper {
   display: flex;
   gap: 1rem;
-  margin-block-end: 1rem;
+  margin-block-end: -0.5rem;
+}
+
+.card__title {
+  color: var(--clr-purple-950);
 }
 
 .faq {
@@ -169,11 +185,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-block: 1rem;
 }
 
+
 .faq:not(:last-child) {
-  border-bottom: 2px solid black;
-  padding-block: 1rem;
+  border-bottom: 2px solid var(--clr-purple-100);
 }
 
 button {
@@ -185,10 +202,46 @@ button {
   border: none;
   cursor: pointer;
   padding-block: 0.5rem;
+  min-width: 0;
+}
+
+button img {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+}
+
+.title {
+  display: inline-block;
+  color: var(--clr-purple-950);
+  font-weight: 600;
+  padding-right: 1rem;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 [hidden] {
   display: none;
 }
 
+.ans {
+  color: var(--clr-purple-300);
+  font-size: 0.9rem;
+}
 
+
+@media screen and (min-width: 48rem) {
+  
+  .card__container {
+    width: 50%;
+    max-width: 36rem;
+  }
+
+  .card {
+    transform: translateY(-9rem);
+  }
+
+  .ans {
+    font-size: var(--fs-paragraph);
+  }
+}
