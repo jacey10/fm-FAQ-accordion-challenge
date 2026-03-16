@@ -247,6 +247,11 @@ button[aria-expanded="true"] .icon--plus {
 
   .card {
     transform: translateY(-9rem);
+    padding: 1.8rem;
+  }
+
+  .card__title--wrapper {
+    margin-block-start: 0.7rem;
   }
 
   .ans {
