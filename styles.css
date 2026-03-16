@@ -188,7 +188,6 @@ body {
   padding-block: 1rem;
 }
 
-
 .faq:not(:last-child) {
   border-bottom: 2px solid var(--clr-purple-100);
 }
@@ -203,6 +202,7 @@ button {
   cursor: pointer;
   padding-block: 0.5rem;
   min-width: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button img {
