@@ -163,17 +163,16 @@ body {
 }
 
 .card {
-  border: 2px solid var();
-  border-radius: 0.8rem;
-  padding: 1.5rem;
   background-color: var(--clr-white);
+  border-radius: 0.8rem;
+  padding: var(--space-md);
   transform: translateY(-7rem);
 }
 
 .card__title--wrapper {
   display: flex;
-  gap: 1rem;
-  margin-block-end: -0.5rem;
+  gap: var(--space-sm);
+  margin-block-end: - var(--space-xs);
 }
 
 .card__title {
@@ -185,11 +184,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-block: 1rem;
+  padding-block: var(--space-sm);
 }
 
 .faq:not(:last-child) {
-  border-bottom: 2px solid var(--clr-purple-100);
+  border-bottom: 0.125rem solid var(--clr-purple-100);
 }
 
 button {
@@ -200,14 +199,14 @@ button {
   justify-content: space-between;
   border: none;
   cursor: pointer;
-  padding-block: 0.5rem;
+  padding-block: var(--space-sm);
   min-width: 0;
   -webkit-tap-highlight-color: transparent;
 }
 
 button img {
-  width: 2rem;
-  height: 2rem;
+  width: var(--space-lg);
+  height: var(--space-lg);
   flex-shrink: 0;
 }
 
@@ -215,18 +214,27 @@ button img {
   display: inline-block;
   color: var(--clr-purple-950);
   font-weight: 600;
-  padding-right: 1rem;
+  padding-right: var(--space-sm);
   min-width: 0;
   overflow-wrap: break-word;
 }
 
-[hidden] {
+.icon--minus {
+  display: none;
+}
+
+button[aria-expanded="true"] .icon--minus {
+  display: block;
+}
+
+button[aria-expanded="true"] .icon--plus {
   display: none;
 }
 
 .ans {
   color: var(--clr-purple-300);
   font-size: 0.9rem;
+  font-weight: var(--fw-regular);
 }
 
 
