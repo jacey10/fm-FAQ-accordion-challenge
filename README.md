@@ -68,7 +68,7 @@ button[aria-expanded="true"] .icon--plus {
 }
 ```
 
-- I learne how to handle ARIA and visibilty together even though they are independent.
+- I learned how to handle ARIA and visibilty together even though they are independent.
 - I learned how to use aria-expanded for communicating state to screen readers.
 - I learned how to use aria-controls to link a button to its answer div or panel.
 
